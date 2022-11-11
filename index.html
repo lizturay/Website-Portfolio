@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/05d071a5bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><b>Welcome!</b></p>
+            <h1>I'm <span class="auto-type"></span></h1>
+            <h3><span>Based in London.</span></h3>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+       <script>
+
+        var typed = new Typed(".auto-type", {
+            strings: ["Elizabeth Turay", "a Software Developer", "a Video Game Enthusiast", "a Creator"],
+            typespeed: 700,
+            backSpeed: 80,
+            loop: true
+        })
+
+       </script>
+
+    </div>
+</div>   
+<!-----------------------about------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pc.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span>Me</span></h1>
+                <h2>Hello! I am Elizabeth Turay, a Junior Fullstack Developer 
+                    based in London.</h2>
+                <p>I am a Biomedical Science Graduate and have experience 
+                    as a Project Management Intern and industries such as Retail, 
+                    Healthcare and Media. Now, I am pursuing 
+                    my passion for learing how to code towards a career in 
+                    software development.</p>
+                <p>I am currently seeking opportunies in software development and 
+                    I have completed a few courses which have helped me learn and 
+                    improve my skills in <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>Python</b> and <b>React</b>.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>BSc Biomedical Science</span><br>London Metropolitan University - 2022</li>
+                        <li><span>Level 3 BTEC Science</span><br>St Francis Xavier - 2017</li>
+                        <li><span>GCSEs</span><br>Notre Dame RC Girls Catholic School - 2015</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Project Management Intern</span><br>Debenhams, London, UK (2018-2019)</li>
+                        <li><span>Hospitality Cashier</span><br>Delaware North, London, UK (2017-2021)</li>
+                        <li><span>NHS Test and Trace Customer Advisor</span><br>SITEL (2021)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Technical Skills</span><br>HTML5<br>CSS3<br>JavaScript<br>Python<br>Bootstrap<br>React<br>Git<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certificates">
+                    <ul>
+                        <li><span>Practical Uses of Python</span><br>Technology Academy - 2022</li>
+                        <li><span>Starting to code in Python</span><br>Technology Academy - 2022</li>
+                        <li><span>On Demand - Technology</span><br>Internship Experience UK - 2022</li>
+                        <li><span>On Demand - Business, Operations & Marketing</span><br>Internship Experience UK - 2022</li>
+                        <li><span>Introduction to Web Development</span><br>Code First Girls - 2022</li>
+                        <li><span>Introduction to Python and Apps</span><br>Code First Girls - 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------projects----------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My <span>Projects</span></h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h2>Pokemon Top Trump Game</h2>
+                    <p>This is a small game where players can compare stats, 
+                        that are similar to the Top Trumps card game. A Pokémon API 
+                        was used with chosen information which would trigger a random 
+                        selection and be compared. Essentially, whomever gets the highest 
+                        score wins.</p>
+                    <a href="https://replit.com/@lizturay/Pokemon-Top-Trump?embed=true"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">   
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h2>Travel Website Design</h2>
+                    <p>My peer (Elif Guler) and I (Elizabeth Turay) created a travel website 
+                    with a variety of countries and locations to choose from. Images were 
+                    included to show viewers of what they would get to experience.</p>
+                    <a href="https://www.besttraveladvice.co.uk/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">    
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h2>Web Design</h2>
+                    <p>A mini project from a 'CFG Javascript MOOC' course where I created an invitation card link.</p>
+                    <a href="https://github.com/lizturay/Javascript-Invite-Card"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<!------------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">My <span>Contact</span></h1>
+                <p>If you have any questions or would like to get to know more about me, 
+                    please feel free to contact me by completing the form below.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ramgiatuelizabethturay/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/lizturay"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/RETCVT.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------footer-------------->
+<footer>
+    <div class="copyright">
+        <div class="left">
+            <img class="img" src="images/logo3.png" alt="logo"> 
+            <p> | © 2022 <span>Elizabeth</span></p>
+        </div>
+    </div>
+  </footer>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxMoY4Z3B6-ydFuQLgIPi-aLI0AyOPBPifKH4Q8mBTFfmLpZWIEXDZJ5d05qqhrRQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+</script>
+
+</body>
+</html>
